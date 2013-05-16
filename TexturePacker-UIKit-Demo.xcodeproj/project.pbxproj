@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46990E8F16A98CA800308011 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46990E8E16A98CA800308011 /* QuartzCore.framework */; };
+		534C89D817450F010014A2AA /* CAWSpriteCoreLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D117450F010014A2AA /* CAWSpriteCoreLayer.m */; };
+		534C89D917450F010014A2AA /* CAWSpriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D317450F010014A2AA /* CAWSpriteData.m */; };
+		534C89DA17450F010014A2AA /* CAWSpriteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D517450F010014A2AA /* CAWSpriteLayer.m */; };
+		534C89DB17450F010014A2AA /* CAWSpriteReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D717450F010014A2AA /* CAWSpriteReader.m */; };
+		534C89E917450F6B0014A2AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E817450F6B0014A2AA /* main.m */; };
+		534C89EC17450F860014A2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 534C89EA17450F860014A2AA /* InfoPlist.strings */; };
+		534C89ED174510840014A2AA /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E017450F380014A2AA /* AppDelegate.h */; };
+		534C89EE174510840014A2AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E117450F380014A2AA /* AppDelegate.m */; };
+		534C89EF174510840014A2AA /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E217450F380014A2AA /* ViewController.h */; };
+		534C89F0174510840014A2AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E317450F380014A2AA /* ViewController.m */; };
+		534C89F1174510840014A2AA /* ViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E417450F380014A2AA /* ViewController.xib */; };
+		534C89FE1745181D0014A2AA /* spritesheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FA1745181D0014A2AA /* spritesheet.plist */; };
+		534C89FF1745181D0014A2AA /* spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FB1745181D0014A2AA /* spritesheet.png */; };
+		534C8A001745181D0014A2AA /* spritesheet@2x.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FC1745181D0014A2AA /* spritesheet@2x.plist */; };
+		534C8A011745181D0014A2AA /* spritesheet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FD1745181D0014A2AA /* spritesheet@2x.png */; };
+		849DF9F6169D9783002251F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DF9F5169D9783002251F1 /* UIKit.framework */; };
+		849DF9F8169D9783002251F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DF9F7169D9783002251F1 /* Foundation.framework */; };
+		849DF9FA169D9783002251F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849DF9F9169D9783002251F1 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46990E8E16A98CA800308011 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		534C89D017450F010014A2AA /* CAWSpriteCoreLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAWSpriteCoreLayer.h; path = demo/CAWTexturePackerSprites/CAWSpriteCoreLayer.h; sourceTree = SOURCE_ROOT; };
+		534C89D117450F010014A2AA /* CAWSpriteCoreLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAWSpriteCoreLayer.m; path = demo/CAWTexturePackerSprites/CAWSpriteCoreLayer.m; sourceTree = SOURCE_ROOT; };
+		534C89D217450F010014A2AA /* CAWSpriteData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAWSpriteData.h; path = demo/CAWTexturePackerSprites/CAWSpriteData.h; sourceTree = SOURCE_ROOT; };
+		534C89D317450F010014A2AA /* CAWSpriteData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAWSpriteData.m; path = demo/CAWTexturePackerSprites/CAWSpriteData.m; sourceTree = SOURCE_ROOT; };
+		534C89D417450F010014A2AA /* CAWSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAWSpriteLayer.h; path = demo/CAWTexturePackerSprites/CAWSpriteLayer.h; sourceTree = SOURCE_ROOT; };
+		534C89D517450F010014A2AA /* CAWSpriteLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAWSpriteLayer.m; path = demo/CAWTexturePackerSprites/CAWSpriteLayer.m; sourceTree = SOURCE_ROOT; };
+		534C89D617450F010014A2AA /* CAWSpriteReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAWSpriteReader.h; path = demo/CAWTexturePackerSprites/CAWSpriteReader.h; sourceTree = SOURCE_ROOT; };
+		534C89D717450F010014A2AA /* CAWSpriteReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAWSpriteReader.m; path = demo/CAWTexturePackerSprites/CAWSpriteReader.m; sourceTree = SOURCE_ROOT; };
+		534C89E017450F380014A2AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = demo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		534C89E117450F380014A2AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		534C89E217450F380014A2AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = demo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		534C89E317450F380014A2AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = demo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		534C89E417450F380014A2AA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController.xib; path = demo/ViewController.xib; sourceTree = SOURCE_ROOT; };
+		534C89E517450F570014A2AA /* TexturePacker-UIKit-Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TexturePacker-UIKit-Demo-Info.plist"; path = "demo/TexturePacker-UIKit-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		534C89E617450F570014A2AA /* TexturePacker-UIKit-Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TexturePacker-UIKit-Demo-Prefix.pch"; path = "demo/TexturePacker-UIKit-Demo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		534C89E817450F6B0014A2AA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demo/main.m; sourceTree = SOURCE_ROOT; };
+		534C89EB17450F860014A2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = demo/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		534C89FA1745181D0014A2AA /* spritesheet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = spritesheet.plist; path = demo/Resources/spritesheet.plist; sourceTree = SOURCE_ROOT; };
+		534C89FB1745181D0014A2AA /* spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spritesheet.png; path = demo/Resources/spritesheet.png; sourceTree = SOURCE_ROOT; };
+		534C89FC1745181D0014A2AA /* spritesheet@2x.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "spritesheet@2x.plist"; path = "demo/Resources/spritesheet@2x.plist"; sourceTree = SOURCE_ROOT; };
+		534C89FD1745181D0014A2AA /* spritesheet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spritesheet@2x.png"; path = "demo/Resources/spritesheet@2x.png"; sourceTree = SOURCE_ROOT; };
+		849DF9F1169D9783002251F1 /* TexturePacker-UIKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TexturePacker-UIKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849DF9F5169D9783002251F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		849DF9F7169D9783002251F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		849DF9F9169D9783002251F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849DF9EE169D9783002251F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46990E8F16A98CA800308011 /* QuartzCore.framework in Frameworks */,
+				849DF9F6169D9783002251F1 /* UIKit.framework in Frameworks */,
+				849DF9F8169D9783002251F1 /* Foundation.framework in Frameworks */,
+				849DF9FA169D9783002251F1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		534C89BE17450CD90014A2AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				534C89FA1745181D0014A2AA /* spritesheet.plist */,
+				534C89FB1745181D0014A2AA /* spritesheet.png */,
+				534C89FC1745181D0014A2AA /* spritesheet@2x.plist */,
+				534C89FD1745181D0014A2AA /* spritesheet@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		534C89BF17450CEB0014A2AA /* CAWTexturePackerSprites */ = {
+			isa = PBXGroup;
+			children = (
+				534C89D017450F010014A2AA /* CAWSpriteCoreLayer.h */,
+				534C89D117450F010014A2AA /* CAWSpriteCoreLayer.m */,
+				534C89D217450F010014A2AA /* CAWSpriteData.h */,
+				534C89D317450F010014A2AA /* CAWSpriteData.m */,
+				534C89D417450F010014A2AA /* CAWSpriteLayer.h */,
+				534C89D517450F010014A2AA /* CAWSpriteLayer.m */,
+				534C89D617450F010014A2AA /* CAWSpriteReader.h */,
+				534C89D717450F010014A2AA /* CAWSpriteReader.m */,
+			);
+			name = CAWTexturePackerSprites;
+			sourceTree = "<group>";
+		};
+		849DF9E6169D9783002251F1 = {
+			isa = PBXGroup;
+			children = (
+				849DF9FB169D9783002251F1 /* Demo */,
+				849DF9F4169D9783002251F1 /* Frameworks */,
+				849DF9F2169D9783002251F1 /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		849DF9F2169D9783002251F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849DF9F1169D9783002251F1 /* TexturePacker-UIKit-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849DF9F4169D9783002251F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46990E8E16A98CA800308011 /* QuartzCore.framework */,
+				849DF9F5169D9783002251F1 /* UIKit.framework */,
+				849DF9F7169D9783002251F1 /* Foundation.framework */,
+				849DF9F9169D9783002251F1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849DF9FB169D9783002251F1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				534C89E017450F380014A2AA /* AppDelegate.h */,
+				534C89E117450F380014A2AA /* AppDelegate.m */,
+				534C89E217450F380014A2AA /* ViewController.h */,
+				534C89E317450F380014A2AA /* ViewController.m */,
+				534C89E417450F380014A2AA /* ViewController.xib */,
+				534C89BF17450CEB0014A2AA /* CAWTexturePackerSprites */,
+				534C89BE17450CD90014A2AA /* Resources */,
+				849DF9FC169D9783002251F1 /* Supporting Files */,
+			);
+			name = Demo;
+			path = demo;
+			sourceTree = "<group>";
+		};
+		849DF9FC169D9783002251F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				534C89EA17450F860014A2AA /* InfoPlist.strings */,
+				534C89E817450F6B0014A2AA /* main.m */,
+				534C89E517450F570014A2AA /* TexturePacker-UIKit-Demo-Info.plist */,
+				534C89E617450F570014A2AA /* TexturePacker-UIKit-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849DF9F0169D9783002251F1 /* TexturePacker-UIKit-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849DFA0F169D9783002251F1 /* Build configuration list for PBXNativeTarget "TexturePacker-UIKit-Demo" */;
+			buildPhases = (
+				849DF9ED169D9783002251F1 /* Sources */,
+				849DF9EE169D9783002251F1 /* Frameworks */,
+				849DF9EF169D9783002251F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TexturePacker-UIKit-Demo";
+			productName = demo;
+			productReference = 849DF9F1169D9783002251F1 /* TexturePacker-UIKit-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849DF9E8169D9783002251F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 849DF9EB169D9783002251F1 /* Build configuration list for PBXProject "TexturePacker-UIKit-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 849DF9E6169D9783002251F1;
+			productRefGroup = 849DF9F2169D9783002251F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849DF9F0169D9783002251F1 /* TexturePacker-UIKit-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849DF9EF169D9783002251F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534C89EC17450F860014A2AA /* InfoPlist.strings in Resources */,
+				534C89FE1745181D0014A2AA /* spritesheet.plist in Resources */,
+				534C89FF1745181D0014A2AA /* spritesheet.png in Resources */,
+				534C8A001745181D0014A2AA /* spritesheet@2x.plist in Resources */,
+				534C8A011745181D0014A2AA /* spritesheet@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849DF9ED169D9783002251F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534C89ED174510840014A2AA /* AppDelegate.h in Sources */,
+				534C89EE174510840014A2AA /* AppDelegate.m in Sources */,
+				534C89EF174510840014A2AA /* ViewController.h in Sources */,
+				534C89F0174510840014A2AA /* ViewController.m in Sources */,
+				534C89F1174510840014A2AA /* ViewController.xib in Sources */,
+				534C89D817450F010014A2AA /* CAWSpriteCoreLayer.m in Sources */,
+				534C89D917450F010014A2AA /* CAWSpriteData.m in Sources */,
+				534C89DA17450F010014A2AA /* CAWSpriteLayer.m in Sources */,
+				534C89DB17450F010014A2AA /* CAWSpriteReader.m in Sources */,
+				534C89E917450F6B0014A2AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		534C89EA17450F860014A2AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534C89EB17450F860014A2AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849DFA0D169D9783002251F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		849DFA0E169D9783002251F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849DFA10169D9783002251F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
+				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		849DFA11169D9783002251F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
+				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849DF9EB169D9783002251F1 /* Build configuration list for PBXProject "TexturePacker-UIKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DFA0D169D9783002251F1 /* Debug */,
+				849DFA0E169D9783002251F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849DFA0F169D9783002251F1 /* Build configuration list for PBXNativeTarget "TexturePacker-UIKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DFA10169D9783002251F1 /* Debug */,
+				849DFA11169D9783002251F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849DF9E8169D9783002251F1 /* Project object */;
+}
