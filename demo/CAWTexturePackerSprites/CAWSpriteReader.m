@@ -35,6 +35,14 @@
     // split file name
     NSString* file = [[filename lastPathComponent] stringByDeletingPathExtension];
 	NSString* extension = [filename pathExtension];
+    
+    // check if the filename contained a path
+    int nameLength = file.length + extension.length + 1;
+    if(nameLength < filename.length) {
+        file = [NSString stringWithFormat:@"%@%@",
+                [filename substringToIndex:filename.length - nameLength],
+                file];
+    }
 
     // check if we need to load the @2x file
 	if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
