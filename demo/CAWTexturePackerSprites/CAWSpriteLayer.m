@@ -25,6 +25,21 @@
  * THE SOFTWARE.
  */
 
+#pragma clang diagnostic push EVERY_WARNING
+#pragma clang diagnostic ignored "-Wshadow"
+#pragma clang diagnostic ignored "-Wnon-virtual-dtor"
+#pragma clang diagnostic ignored "-Wfloat-equal"
+#pragma clang diagnostic ignored "-Wpadded"
+#pragma clang diagnostic ignored "-Wweak-vtables"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wundef"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#pragma clang diagnostic ignored "-Wdocumentation"
+#pragma clang diagnostic ignored "-Wdirect-ivar-access"
+#pragma clang diagnostic ignored "-Wassign-enum"
+#pragma clang diagnostic ignored "-Wformat-nonliteral"
+
 #import "CAWSpriteLayer.h"
 #import "CAWSpriteCoreLayer.h"
 
@@ -37,9 +52,9 @@
     return [[CAWSpriteLayer alloc] initWithSpriteData:spriteData andImage:img];
 }
 
-- (id) initWithSpriteData:(NSDictionary *)spriteData andImage:(UIImage*)img;
+- (id) initWithSpriteData:(NSDictionary *)spriteData andImage:(UIImage*)img
 {
-    if ( self = [super init] )
+    if ( (self = [super init]) )
     {
         animationLayer = [CAWSpriteCoreLayer layer];
         [self addSublayer:animationLayer];
@@ -53,7 +68,7 @@
     [animationLayer setSpriteData:spriteData andImage:img];
 }
 
-- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(int)repeatCount
+- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(float)repeatCount
 {
     [animationLayer playAnimation:frameNames withRate:frameRate andRepeat:repeatCount];
 }
@@ -88,5 +103,11 @@
     [animationLayer setShowLastFrame:show];
 }
 
+- (void)setAnimationFrameExtension:(NSString *)frameExtension
+{
+    [animationLayer setAnimationFrameExtension:frameExtension];
+}
 
 @end
+
+#pragma clang diagnostic pop EVERY_WARNING

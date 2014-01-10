@@ -23,6 +23,19 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+#pragma clang diagnostic push EVERY_WARNING
+#pragma clang diagnostic ignored "-Wshadow"
+#pragma clang diagnostic ignored "-Wnon-virtual-dtor"
+#pragma clang diagnostic ignored "-Wfloat-equal"
+#pragma clang diagnostic ignored "-Wpadded"
+#pragma clang diagnostic ignored "-Wweak-vtables"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wundef"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#pragma clang diagnostic ignored "-Wdocumentation"
+#pragma clang diagnostic ignored "-Wdirect-ivar-access"
+#pragma clang diagnostic ignored "-Wassign-enum"
 
 #import "CAWSpriteData.h"
 
@@ -37,5 +50,6 @@
     NSLog(@"posX, posY: %d, %d, offX, offY: %d %d; w, h: %d %d:", posX, posY, offsetX, offsetY, spriteWidth, spriteHeight);
 }
 
+#pragma clang diagnostic pop EVERY_WARNING
 
 @end

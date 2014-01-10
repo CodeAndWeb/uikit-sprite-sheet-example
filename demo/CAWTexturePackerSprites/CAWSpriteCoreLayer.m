@@ -25,6 +25,21 @@
  * THE SOFTWARE.
  */
 
+#pragma clang diagnostic push EVERY_WARNING
+#pragma clang diagnostic ignored "-Wshadow"
+#pragma clang diagnostic ignored "-Wnon-virtual-dtor"
+#pragma clang diagnostic ignored "-Wfloat-equal"
+#pragma clang diagnostic ignored "-Wpadded"
+#pragma clang diagnostic ignored "-Wweak-vtables"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wundef"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#pragma clang diagnostic ignored "-Wdocumentation"
+#pragma clang diagnostic ignored "-Wdirect-ivar-access"
+#pragma clang diagnostic ignored "-Wassign-enum"
+#pragma clang diagnostic ignored "-Wformat-nonliteral"
+
 #import "CAWSpriteCoreLayer.h"
 
 @implementation CAWSpriteCoreLayer
@@ -36,10 +51,11 @@
 @synthesize showLastFrame;
 @synthesize subLayer;
 @synthesize stillFrame;
+@synthesize animationFrameExtension;
 
 -(id)init
 {
-    if (self = [super init])
+    if ((self = [super init]))
     {
         showLastFrame = false;
         state = TPSPRITE_INIT;
@@ -68,14 +84,34 @@
     atlasSize = CGSizeMake(CGImageGetWidth(img), CGImageGetHeight(img));
 }
 
-- (void)playAnimation:(NSString *)frameNames withRate:(float)frameRate andRepeat:(int)repeatCount
+- (void)playAnimation:(NSString *)frameNames withRate:(float)frameRate andRepeat:(float)repeatCount
 {
     NSMutableArray *frameList = [[NSMutableArray alloc] initWithCapacity:50];
     
     numFrames = 0;
     for(;;)
     {
-        NSObject *fr = [spriteData objectForKey:[NSString stringWithFormat:frameNames, numFrames+1]];
+        NSString *frameName = [NSString stringWithFormat:frameNames, numFrames+1];
+        BOOL isRetina = [[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
+        ([UIScreen mainScreen].scale == 2.0);
+        
+        NSString *retinaExtension = @"";
+        
+        if (isRetina == YES)
+        {
+            retinaExtension = @"@2x";
+        }
+        
+        if (self.animationFrameExtension != nil && [self.animationFrameExtension length] > 0)
+        {
+            frameName = [NSString stringWithFormat:@"%@%@.%@", frameName, retinaExtension, self.animationFrameExtension];
+        }
+        else
+        {
+            frameName = [NSString stringWithFormat:@"%@%@", frameName, retinaExtension];
+        }
+        
+        NSObject *fr = [spriteData objectForKey:frameName];
         if(!fr)
         {
             break;
@@ -97,7 +133,7 @@
     state = TPSPRITE_RUNNING;
     
     stillFrame = nil;
-
+    
     currentAnimation = anim;
     
     [self removeAllAnimations];
@@ -173,7 +209,7 @@
 - (void) showFrame:(NSString *)frameName
 {
     state = TPSPRITE_STOPPED;
-
+    
     [self removeAllAnimations];
     stillFrame = [spriteData objectForKey:frameName];
     [self setNeedsDisplay];
@@ -219,5 +255,7 @@
         [self setNeedsDisplay];
     }
 }
+
+#pragma clang diagnostic pop EVERY_WARNING
 
 @end
