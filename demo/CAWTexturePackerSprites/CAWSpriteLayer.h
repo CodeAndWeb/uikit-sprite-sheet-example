@@ -26,6 +26,21 @@
  */
 
 #import <Foundation/Foundation.h>
+
+#pragma clang diagnostic push EVERY_WARNING
+#pragma clang diagnostic ignored "-Wshadow"
+#pragma clang diagnostic ignored "-Wnon-virtual-dtor"
+#pragma clang diagnostic ignored "-Wfloat-equal"
+#pragma clang diagnostic ignored "-Wpadded"
+#pragma clang diagnostic ignored "-Wweak-vtables"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wundef"
+#pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#pragma clang diagnostic ignored "-Wdocumentation"
+#pragma clang diagnostic ignored "-Wdirect-ivar-access"
+#pragma clang diagnostic ignored "-Wassign-enum"
+#pragma clang diagnostic ignored "-Wformat-nonliteral"
 #import "CAWSpriteCoreLayer.h"
 
 @interface CAWSpriteLayer : CALayer
@@ -60,7 +75,7 @@
  * @param frameRate rate to play the animation
  * @param repeatCount number of repetitions
  */
-- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(int)repeatCount;
+- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(float)repeatCount;
 
 /**
  * Play animation once with given framerate.
@@ -99,4 +114,8 @@
  */
 - (void)setShowLastFrame:(bool)show;
 
+- (void)setAnimationFrameExtension:(NSString *)frameExtension;
+
 @end
+
+#pragma clang diagnostic pop EVERY_WARNING
