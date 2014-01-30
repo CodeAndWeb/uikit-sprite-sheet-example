@@ -73,9 +73,10 @@
     NSMutableArray *frameList = [[NSMutableArray alloc] initWithCapacity:50];
     
     numFrames = 0;
-    for(;;)
+    while(YES)
     {
-        NSObject *fr = [spriteData objectForKey:[NSString stringWithFormat:frameNames, numFrames+1]];
+        NSString* frameKey = [NSString stringWithFormat:frameNames, numFrames];
+        NSObject *fr = [spriteData objectForKey:frameKey];
         if(!fr)
         {
             break;
