@@ -93,6 +93,7 @@
     anim.duration = [[NSNumber numberWithInt:frameList.count] floatValue] / frameRate;
     anim.repeatCount = repeatCount;
     anim.delegate = self;
+    anim.removedOnCompletion = NO;
     
     state = TPSPRITE_RUNNING;
     
