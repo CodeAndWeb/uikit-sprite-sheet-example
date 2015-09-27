@@ -39,4 +39,9 @@
 - (IBAction)pause:(id)sender;
 - (IBAction)start:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIImageView *animationView;
+@property (weak, nonatomic) IBOutlet UIImageView *scaledAndTransformedView;
+@property (weak, nonatomic) IBOutlet UIImageView *staticView;
+
+
 @end

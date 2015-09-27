@@ -40,9 +40,6 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    CGRect screens = [[UIScreen mainScreen] bounds];
-    NSLog(@"screens : %@ with scale %f", NSStringFromCGRect(screens), [UIScreen mainScreen].scale);
-    
     return YES;
 }
 
