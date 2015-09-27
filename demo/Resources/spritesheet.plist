@@ -7,7 +7,7 @@ Sprite sheet file created for UIKit using TexturePacker
 http://www.codeandweb.com/texturepacker
 
 ===================================================================
-$TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe81ea08f791608:4298dc3ef68984c693be4065c3af828c$
+$TexturePacker:SmartUpdate:6fa4511502bb85bf101b8454c0649d60:5880c767ea5d25105fe81ea08f791608:4298dc3ef68984c693be4065c3af828c$
 -->
 <plist version="1.0">
 	<dict>
@@ -16,8 +16,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 
                         <key>Box2</key>
 			<dict>
-				<key>x</key><real>458</real>
-				<key>y</key><real>251</real>
+				<key>x</key><real>979</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>60</real>
 				<key>h</key><real>60</real>
 				<key>oX</key><real>0</real>
@@ -52,7 +52,7 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0003</key>
 			<dict>
-				<key>x</key><real>262</real>
+				<key>x</key><real>842</real>
 				<key>y</key><real>2</real>
 				<key>w</key><real>135</real>
 				<key>h</key><real>243</real>
@@ -64,7 +64,7 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0004</key>
 			<dict>
-				<key>x</key><real>262</real>
+				<key>x</key><real>842</real>
 				<key>y</key><real>2</real>
 				<key>w</key><real>135</real>
 				<key>h</key><real>243</real>
@@ -76,7 +76,7 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0005</key>
 			<dict>
-				<key>x</key><real>399</real>
+				<key>x</key><real>603</real>
 				<key>y</key><real>2</real>
 				<key>w</key><real>122</real>
 				<key>h</key><real>247</real>
@@ -88,7 +88,7 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0006</key>
 			<dict>
-				<key>x</key><real>399</real>
+				<key>x</key><real>603</real>
 				<key>y</key><real>2</real>
 				<key>w</key><real>122</real>
 				<key>h</key><real>247</real>
@@ -100,8 +100,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0007</key>
 			<dict>
-				<key>x</key><real>224</real>
-				<key>y</key><real>258</real>
+				<key>x</key><real>727</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>113</real>
 				<key>h</key><real>246</real>
 				<key>oX</key><real>34</real>
@@ -112,8 +112,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0008</key>
 			<dict>
-				<key>x</key><real>224</real>
-				<key>y</key><real>258</real>
+				<key>x</key><real>727</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>113</real>
 				<key>h</key><real>246</real>
 				<key>oX</key><real>34</real>
@@ -124,8 +124,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0009</key>
 			<dict>
-				<key>x</key><real>2</real>
-				<key>y</key><real>260</real>
+				<key>x</key><real>381</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>111</real>
 				<key>h</key><real>249</real>
 				<key>oX</key><real>27</real>
@@ -136,8 +136,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0010</key>
 			<dict>
-				<key>x</key><real>2</real>
-				<key>y</key><real>260</real>
+				<key>x</key><real>381</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>111</real>
 				<key>h</key><real>249</real>
 				<key>oX</key><real>27</real>
@@ -148,8 +148,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0011</key>
 			<dict>
-				<key>x</key><real>115</real>
-				<key>y</key><real>260</real>
+				<key>x</key><real>494</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>107</real>
 				<key>h</key><real>249</real>
 				<key>oX</key><real>24</real>
@@ -160,8 +160,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0012</key>
 			<dict>
-				<key>x</key><real>115</real>
-				<key>y</key><real>260</real>
+				<key>x</key><real>494</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>107</real>
 				<key>h</key><real>249</real>
 				<key>oX</key><real>24</real>
@@ -172,8 +172,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0013</key>
 			<dict>
-				<key>x</key><real>339</real>
-				<key>y</key><real>251</real>
+				<key>x</key><real>262</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>117</real>
 				<key>h</key><real>252</real>
 				<key>oX</key><real>26</real>
@@ -184,8 +184,8 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			</dict>
                         <key>CapGuyWalk0014</key>
 			<dict>
-				<key>x</key><real>339</real>
-				<key>y</key><real>251</real>
+				<key>x</key><real>262</real>
+				<key>y</key><real>2</real>
 				<key>w</key><real>117</real>
 				<key>h</key><real>252</real>
 				<key>oX</key><real>26</real>
@@ -224,9 +224,9 @@ $TexturePacker:SmartUpdate:1ba433e3a4376d4d52bbe15a3cd546c9:5880c767ea5d25105fe8
 			<key>image</key>
 			<string>spritesheet.png</string>
 			<key>width</key>
-			<integer>523</integer>
+			<integer>1041</integer>
 			<key>height</key>
-			<integer>511</integer>
+			<integer>260</integer>
 		</dict>
 	</dict>
 </plist>

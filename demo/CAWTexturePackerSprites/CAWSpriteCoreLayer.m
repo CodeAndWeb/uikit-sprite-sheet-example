@@ -155,7 +155,7 @@
             if([UIScreen mainScreen].scale == 2.0)
                 scale = 0.5;
             else if([UIScreen mainScreen].scale == 3.0)
-                scale = 0.4;
+                scale = 0.35;
         }
         else
         {
