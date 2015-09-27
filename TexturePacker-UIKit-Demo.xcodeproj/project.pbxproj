@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E380CBC1BB7987F00ABE5A6 /* spritesheet@3x.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E380CBA1BB7987F00ABE5A6 /* spritesheet@3x.plist */; settings = {ASSET_TAGS = (); }; };
+		1E380CBD1BB7987F00ABE5A6 /* spritesheet@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E380CBB1BB7987F00ABE5A6 /* spritesheet@3x.png */; settings = {ASSET_TAGS = (); }; };
+		1E380CBF1BB7991300ABE5A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E380CBE1BB7991300ABE5A6 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		1E380CC31BB7A9F300ABE5A6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E380CC21BB7A9F300ABE5A6 /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		46990E8F16A98CA800308011 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46990E8E16A98CA800308011 /* QuartzCore.framework */; };
 		534C89D817450F010014A2AA /* CAWSpriteCoreLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D117450F010014A2AA /* CAWSpriteCoreLayer.m */; };
 		534C89D917450F010014A2AA /* CAWSpriteData.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89D317450F010014A2AA /* CAWSpriteData.m */; };
@@ -18,7 +22,6 @@
 		534C89EE174510840014A2AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E117450F380014A2AA /* AppDelegate.m */; };
 		534C89EF174510840014A2AA /* ViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E217450F380014A2AA /* ViewController.h */; };
 		534C89F0174510840014A2AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E317450F380014A2AA /* ViewController.m */; };
-		534C89F1174510840014A2AA /* ViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 534C89E417450F380014A2AA /* ViewController.xib */; };
 		534C89FE1745181D0014A2AA /* spritesheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FA1745181D0014A2AA /* spritesheet.plist */; };
 		534C89FF1745181D0014A2AA /* spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FB1745181D0014A2AA /* spritesheet.png */; };
 		534C8A001745181D0014A2AA /* spritesheet@2x.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534C89FC1745181D0014A2AA /* spritesheet@2x.plist */; };
@@ -29,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E380CBA1BB7987F00ABE5A6 /* spritesheet@3x.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "spritesheet@3x.plist"; path = "Resources/spritesheet@3x.plist"; sourceTree = "<group>"; };
+		1E380CBB1BB7987F00ABE5A6 /* spritesheet@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spritesheet@3x.png"; path = "Resources/spritesheet@3x.png"; sourceTree = "<group>"; };
+		1E380CBE1BB7991300ABE5A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "TexturePacker-UIKit-Demo/Images.xcassets"; sourceTree = "<group>"; };
+		1E380CC21BB7A9F300ABE5A6 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		46990E8E16A98CA800308011 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		534C89D017450F010014A2AA /* CAWSpriteCoreLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAWSpriteCoreLayer.h; path = demo/CAWTexturePackerSprites/CAWSpriteCoreLayer.h; sourceTree = SOURCE_ROOT; };
 		534C89D117450F010014A2AA /* CAWSpriteCoreLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CAWSpriteCoreLayer.m; path = demo/CAWTexturePackerSprites/CAWSpriteCoreLayer.m; sourceTree = SOURCE_ROOT; };
@@ -42,7 +49,6 @@
 		534C89E117450F380014A2AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		534C89E217450F380014A2AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = demo/ViewController.h; sourceTree = SOURCE_ROOT; };
 		534C89E317450F380014A2AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = demo/ViewController.m; sourceTree = SOURCE_ROOT; };
-		534C89E417450F380014A2AA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController.xib; path = demo/ViewController.xib; sourceTree = SOURCE_ROOT; };
 		534C89E517450F570014A2AA /* TexturePacker-UIKit-Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TexturePacker-UIKit-Demo-Info.plist"; path = "demo/TexturePacker-UIKit-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		534C89E617450F570014A2AA /* TexturePacker-UIKit-Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TexturePacker-UIKit-Demo-Prefix.pch"; path = "demo/TexturePacker-UIKit-Demo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		534C89E817450F6B0014A2AA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demo/main.m; sourceTree = SOURCE_ROOT; };
@@ -75,6 +81,8 @@
 		534C89BE17450CD90014A2AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1E380CBA1BB7987F00ABE5A6 /* spritesheet@3x.plist */,
+				1E380CBB1BB7987F00ABE5A6 /* spritesheet@3x.png */,
 				534C89FA1745181D0014A2AA /* spritesheet.plist */,
 				534C89FB1745181D0014A2AA /* spritesheet.png */,
 				534C89FC1745181D0014A2AA /* spritesheet@2x.plist */,
@@ -101,6 +109,7 @@
 		849DF9E6169D9783002251F1 = {
 			isa = PBXGroup;
 			children = (
+				1E380CBE1BB7991300ABE5A6 /* Images.xcassets */,
 				849DF9FB169D9783002251F1 /* Demo */,
 				849DF9F4169D9783002251F1 /* Frameworks */,
 				849DF9F2169D9783002251F1 /* Products */,
@@ -135,7 +144,7 @@
 				534C89E117450F380014A2AA /* AppDelegate.m */,
 				534C89E217450F380014A2AA /* ViewController.h */,
 				534C89E317450F380014A2AA /* ViewController.m */,
-				534C89E417450F380014A2AA /* ViewController.xib */,
+				1E380CC21BB7A9F300ABE5A6 /* ViewController.xib */,
 				534C89BF17450CEB0014A2AA /* CAWTexturePackerSprites */,
 				534C89BE17450CD90014A2AA /* Resources */,
 				849DF9FC169D9783002251F1 /* Supporting Files */,
@@ -206,7 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				534C89EC17450F860014A2AA /* InfoPlist.strings in Resources */,
+				1E380CC31BB7A9F300ABE5A6 /* ViewController.xib in Resources */,
+				1E380CBF1BB7991300ABE5A6 /* Images.xcassets in Resources */,
+				1E380CBC1BB7987F00ABE5A6 /* spritesheet@3x.plist in Resources */,
 				534C89FE1745181D0014A2AA /* spritesheet.plist in Resources */,
+				1E380CBD1BB7987F00ABE5A6 /* spritesheet@3x.png in Resources */,
 				534C89FF1745181D0014A2AA /* spritesheet.png in Resources */,
 				534C8A001745181D0014A2AA /* spritesheet@2x.plist in Resources */,
 				534C8A011745181D0014A2AA /* spritesheet@2x.png in Resources */,
@@ -224,7 +237,6 @@
 				534C89EE174510840014A2AA /* AppDelegate.m in Sources */,
 				534C89EF174510840014A2AA /* ViewController.h in Sources */,
 				534C89F0174510840014A2AA /* ViewController.m in Sources */,
-				534C89F1174510840014A2AA /* ViewController.xib in Sources */,
 				534C89D817450F010014A2AA /* CAWSpriteCoreLayer.m in Sources */,
 				534C89D917450F010014A2AA /* CAWSpriteData.m in Sources */,
 				534C89DA17450F010014A2AA /* CAWSpriteLayer.m in Sources */,
@@ -305,11 +317,16 @@
 		849DFA10169D9783002251F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
 				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -317,11 +334,16 @@
 		849DFA11169D9783002251F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
 				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
