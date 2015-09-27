@@ -36,11 +36,13 @@
     NSString* file = [[filename lastPathComponent] stringByDeletingPathExtension];
 	NSString* extension = [filename pathExtension];
 
-    // check if we need to load the @2x file
-	if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-		([UIScreen mainScreen].scale == 2.0))
+    // check if we need to load the higher quality file
+	if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)])
 	{
-		file = [NSString stringWithFormat:@"%@@2x", file];
+        if([UIScreen mainScreen].scale == 2.0)
+            file = [NSString stringWithFormat:@"%@@2x", file];
+        else if([UIScreen mainScreen].scale == 3.0)
+            file = [NSString stringWithFormat:@"%@@3x", file];
 	}
     
     // read the data from the plist file

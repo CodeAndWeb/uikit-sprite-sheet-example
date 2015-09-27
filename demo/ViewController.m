@@ -40,30 +40,34 @@
     
     // animation
     animationLayer = [CAWSpriteLayer layerWithSpriteData:spriteData andImage:texture];
-    [self.view.layer addSublayer:animationLayer];
-    [animationLayer playAnimation:@"CapGuyWalk%04d" withRate:24 andRepeat:INFINITY];
+    [animationLayer setPosition:CGPointMake(self.animationView.frame.size.width/2,0)];
+    animationLayer.frame = self.animationView.bounds;
+    [self.animationView.layer addSublayer:animationLayer];
+    [animationLayer playAnimation:@"CapGuyWalk%04d" withRate:24 andRepeat:9999];
     [animationLayer setShowLastFrame:true];
-    [animationLayer setPosition:CGPointMake(50, 80)];
-    
-    
     
     // animation with transform: scaled layer
     CAWSpriteLayer *animationLayer2 = [CAWSpriteLayer layerWithSpriteData:spriteData andImage:texture];
-    [self.view.layer addSublayer:animationLayer2];
-    [animationLayer2 playAnimation:@"CapGuyWalk%04d" withRate:24  andRepeat:INFINITY];
-    [animationLayer2 setShowLastFrame:true];
-    [animationLayer2 setPosition:CGPointMake(250, 80)];
-    
     // scale the animation by 50%
-    animationLayer2.transform = CATransform3DMakeScale(0.5,0.5, 1.0);
-    
-    
+    animationLayer2.transform = CATransform3DMakeScale(0.5f, 0.5f, 1.0f);
+    animationLayer2.frame = self.scaledAndTransformedView.bounds;
+    [self.scaledAndTransformedView.layer addSublayer:animationLayer2];
+    [animationLayer2 playAnimation:@"CapGuyWalk%04d" withRate:24  andRepeat:9999];
+    [animationLayer2 setShowLastFrame:true];
     
     // static image
     CAWSpriteLayer *staticImageLayer = [CAWSpriteLayer layerWithSpriteData:spriteData andImage:texture];
-    [self.view.layer addSublayer:staticImageLayer];
-    [staticImageLayer setPosition:CGPointMake(400, 200)];
+    staticImageLayer.frame = self.staticView.bounds;
+    [self.staticView.layer addSublayer:staticImageLayer];
     [staticImageLayer showFrame:@"Box2"];
+}
+
+- (float)scaleForSize:(CGSize)size toFitView:(UIView*)view
+{
+    CGSize viewSize = view.frame.size;
+    float toScaleWidth = viewSize.width / size.width;
+    float toScaleHeight = viewSize.height / size.height;
+    return toScaleWidth < toScaleHeight ? toScaleWidth : toScaleHeight;
 }
 
 // Action methods for the test buttons (just to demonstrate the functionality)

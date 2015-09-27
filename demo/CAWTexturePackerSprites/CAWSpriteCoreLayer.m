@@ -150,10 +150,12 @@
     static float scale = -1.0;
     if(scale == -1.0)
     {
-        if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            ([UIScreen mainScreen].scale == 2.0))
+        if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)])
         {
-            scale = 0.5;
+            if([UIScreen mainScreen].scale == 2.0)
+                scale = 0.5;
+            else if([UIScreen mainScreen].scale == 3.0)
+                scale = 0.35;
         }
         else
         {
