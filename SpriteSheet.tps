@@ -2,18 +2,35 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>1</int>
-        <key>variation</key>
-        <string>main</string>
-        <key>verbose</key>
-        <false/>
+        <int>6</int>
+        <key>texturePackerVersion</key>
+        <string>7.0.3</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
                 <key>scale</key>
+                <double>1</double>
+                <key>extension</key>
+                <string>@2x</string>
+                <key>spriteFilter</key>
+                <string></string>
+                <key>acceptFractionalValues</key>
+                <false/>
+                <key>maxTextureSize</key>
+                <QSize>
+                    <key>width</key>
+                    <int>-1</int>
+                    <key>height</key>
+                    <int>-1</int>
+                </QSize>
+            </struct>
+            <struct type="AutoSDSettings">
+                <key>scale</key>
                 <double>0.5</double>
                 <key>extension</key>
-                <string>.</string>
+                <string></string>
+                <key>spriteFilter</key>
+                <string></string>
                 <key>acceptFractionalValues</key>
                 <false/>
                 <key>maxTextureSize</key>
@@ -27,10 +44,6 @@
         </array>
         <key>allowRotation</key>
         <false/>
-        <key>quiet</key>
-        <false/>
-        <key>premultiplyAlpha</key>
-        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -38,9 +51,21 @@
         <key>dataFormat</key>
         <string>uikit</string>
         <key>textureFileName</key>
-        <filename>demo/Resources/spritesheet@2x.png</filename>
+        <filename>demo/Resources/spritesheet{v}.png</filename>
         <key>flipPVR</key>
         <false/>
+        <key>pvrQualityLevel</key>
+        <uint>3</uint>
+        <key>astcQualityLevel</key>
+        <uint>2</uint>
+        <key>basisUniversalQualityLevel</key>
+        <uint>2</uint>
+        <key>etc1QualityLevel</key>
+        <uint>40</uint>
+        <key>etc2QualityLevel</key>
+        <uint>40</uint>
+        <key>dxtCompressionMode</key>
+        <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
         <key>ditherType</key>
         <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
         <key>backgroundColor</key>
@@ -61,6 +86,8 @@
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
         <uint>0</uint>
+        <key>webpQualityLevel</key>
+        <uint>101</uint>
         <key>textureSubPath</key>
         <string></string>
         <key>textureFormat</key>
@@ -81,8 +108,6 @@
             <key>height</key>
             <int>-1</int>
         </QSize>
-        <key>reduceBorderArtifacts</key>
-        <false/>
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
@@ -92,8 +117,6 @@
             <key>sizeConstraints</key>
             <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
             <key>forceSquared</key>
-            <false/>
-            <key>forceWordAligned</key>
             <false/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
@@ -107,33 +130,28 @@
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
             </struct>
-        </struct>
-        <key>andEngine</key>
-        <struct type="AndEngine">
-            <key>minFilter</key>
-            <enum type="AndEngine::MinFilter">Linear</enum>
-            <key>packageName</key>
-            <string>Texture</string>
-            <key>javaFileName</key>
-            <filename>shark.java</filename>
-            <key>wrap</key>
-            <struct type="AndEngineWrap">
-                <key>s</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-                <key>t</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
+            <key>polygon</key>
+            <struct type="AlgorithmPolygonSettings">
+                <key>alignToGrid</key>
+                <uint>1</uint>
             </struct>
-            <key>magFilter</key>
-            <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
-        <key>dataFileName</key>
-        <filename>demo/Resources/spritesheet@2x.plist</filename>
-        <key>mainExtension</key>
-        <string>@2x.</string>
+        <key>dataFileNames</key>
+        <map type="GFileNameMap">
+            <key>plist</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename>demo/Resources/spritesheet{v}.plist</filename>
+            </struct>
+        </map>
+        <key>multiPackMode</key>
+        <enum type="SettingsBase::MultiPackMode">MultiPackOff</enum>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
         <enum type="SettingsBase::OutputFormat">RGBA8888</enum>
+        <key>alphaHandling</key>
+        <enum type="SettingsBase::AlphaHandling">ClearTransparentPixels</enum>
         <key>contentProtection</key>
         <struct type="ContentProtection">
             <key>key</key>
@@ -143,27 +161,91 @@
         <true/>
         <key>trimSpriteNames</key>
         <true/>
+        <key>prependSmartFolderName</key>
+        <false/>
+        <key>autodetectAnimations</key>
+        <true/>
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
             <key>scale</key>
             <double>1</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
-            <key>innerPadding</key>
-            <uint>0</uint>
             <key>extrude</key>
             <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
+            <key>trimMargin</key>
+            <uint>1</uint>
             <key>trimMode</key>
             <enum type="SpriteSettings::TrimMode">Trim</enum>
+            <key>tracerTolerance</key>
+            <int>200</int>
             <key>heuristicMask</key>
             <false/>
+            <key>defaultPivotPoint</key>
+            <point_f>0.5,0.5</point_f>
+            <key>writePivotPoints</key>
+            <false/>
         </struct>
-        <key>fileList</key>
-        <array>
-            <filename>sprites</filename>
-        </array>
+        <key>individualSpriteSettings</key>
+        <map type="IndividualSpriteSettingsMap">
+            <key type="filename">sprites/Box2.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>30,30,59,60</rect>
+                <key>scale9Paddings</key>
+                <rect>30,30,59,60</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">sprites/CapGuyWalk0001.png</key>
+            <key type="filename">sprites/CapGuyWalk0002.png</key>
+            <key type="filename">sprites/CapGuyWalk0003.png</key>
+            <key type="filename">sprites/CapGuyWalk0004.png</key>
+            <key type="filename">sprites/CapGuyWalk0005.png</key>
+            <key type="filename">sprites/CapGuyWalk0006.png</key>
+            <key type="filename">sprites/CapGuyWalk0007.png</key>
+            <key type="filename">sprites/CapGuyWalk0008.png</key>
+            <key type="filename">sprites/CapGuyWalk0009.png</key>
+            <key type="filename">sprites/CapGuyWalk0010.png</key>
+            <key type="filename">sprites/CapGuyWalk0011.png</key>
+            <key type="filename">sprites/CapGuyWalk0012.png</key>
+            <key type="filename">sprites/CapGuyWalk0013.png</key>
+            <key type="filename">sprites/CapGuyWalk0014.png</key>
+            <key type="filename">sprites/CapGuyWalk0015.png</key>
+            <key type="filename">sprites/CapGuyWalk0016.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>75,130,150,261</rect>
+                <key>scale9Paddings</key>
+                <rect>75,130,150,261</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+        </map>
+        <key>fileLists</key>
+        <map type="SpriteSheetMap">
+            <key>default</key>
+            <struct type="SpriteSheet">
+                <key>files</key>
+                <array>
+                    <filename>sprites</filename>
+                </array>
+            </struct>
+        </map>
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>
@@ -174,5 +256,17 @@
         <uint>1</uint>
         <key>commonDivisorY</key>
         <uint>1</uint>
+        <key>packNormalMaps</key>
+        <false/>
+        <key>autodetectNormalMaps</key>
+        <true/>
+        <key>normalMapFilter</key>
+        <string></string>
+        <key>normalMapSuffix</key>
+        <string></string>
+        <key>normalMapSheetFileName</key>
+        <filename></filename>
+        <key>exporterProperties</key>
+        <map type="ExporterProperties"/>
     </struct>
 </data>
