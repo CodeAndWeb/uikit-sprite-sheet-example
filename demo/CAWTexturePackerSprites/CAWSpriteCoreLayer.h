@@ -54,7 +54,7 @@ typedef enum
 @property (nonatomic, strong) CAWSpriteData *stillFrame;
 @property (nonatomic, assign) bool showLastFrame;
 
-- (void) playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(int)repeatCount;
+- (void) playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(float)repeatCount;
 
 /**
  Show single Frame without Animation

@@ -85,7 +85,6 @@
 - (IBAction)start:(id)sender
 {
     [animationLayer playAnimation:@"CapGuyWalk%04d" withRate:24 andRepeat:INFINITY];
-    [animationLayer setShowLastFrame:false];
 }
 
 - (void)viewDidUnload

@@ -38,7 +38,7 @@
 
     // check if we need to load the @2x file
 	if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-		([UIScreen mainScreen].scale == 2.0))
+		([UIScreen mainScreen].scale >= 2.0))
 	{
 		file = [NSString stringWithFormat:@"%@@2x", file];
 	}

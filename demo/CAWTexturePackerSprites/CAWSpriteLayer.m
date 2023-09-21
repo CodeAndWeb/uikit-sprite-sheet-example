@@ -53,7 +53,7 @@
     [animationLayer setSpriteData:spriteData andImage:img];
 }
 
-- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(int)repeatCount
+- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(float)repeatCount
 {
     [animationLayer playAnimation:frameNames withRate:frameRate andRepeat:repeatCount];
 }

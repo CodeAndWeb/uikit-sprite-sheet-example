@@ -60,7 +60,7 @@
  * @param frameRate rate to play the animation
  * @param repeatCount number of repetitions
  */
-- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(int)repeatCount;
+- (void)playAnimation:(NSString*) frameNames withRate:(float)frameRate andRepeat:(float)repeatCount;
 
 /**
  * Play animation once with given framerate.

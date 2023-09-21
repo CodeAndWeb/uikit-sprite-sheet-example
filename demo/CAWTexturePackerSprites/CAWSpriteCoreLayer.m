@@ -68,7 +68,7 @@
     atlasSize = CGSizeMake(CGImageGetWidth(img), CGImageGetHeight(img));
 }
 
-- (void)playAnimation:(NSString *)frameNames withRate:(float)frameRate andRepeat:(int)repeatCount
+- (void)playAnimation:(NSString *)frameNames withRate:(float)frameRate andRepeat:(float)repeatCount
 {
     NSMutableArray *frameList = [[NSMutableArray alloc] initWithCapacity:50];
     
@@ -151,7 +151,7 @@
     if(scale == -1.0)
     {
         if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
-            ([UIScreen mainScreen].scale == 2.0))
+            ([UIScreen mainScreen].scale >= 2.0))
         {
             scale = 0.5;
         }

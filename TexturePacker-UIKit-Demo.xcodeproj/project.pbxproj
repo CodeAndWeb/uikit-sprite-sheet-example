@@ -188,6 +188,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 849DF9E6169D9783002251F1;
@@ -305,10 +306,12 @@
 		849DFA10169D9783002251F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
 				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codeandweb.uikit-sprite-sheet-example";
 				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
 				WRAPPER_EXTENSION = app;
 			};
@@ -317,10 +320,12 @@
 		849DFA11169D9783002251F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "demo/TexturePacker-UIKit-Demo-Prefix.pch";
 				INFOPLIST_FILE = "demo/TexturePacker-UIKit-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codeandweb.uikit-sprite-sheet-example";
 				PRODUCT_NAME = "TexturePacker-UIKit-Demo";
 				WRAPPER_EXTENSION = app;
 			};
