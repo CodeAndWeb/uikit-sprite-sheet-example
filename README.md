@@ -3,7 +3,7 @@
 
 This demonstration explains how TexturePacker can be used to create SpriteSheets for UIKit projects. The classes contained in this project allow you to easily play animations and display single frames.
 
-See http://www.codeandweb.com/texturepacker/tutorials/uikit-animations-with-texturepacker
+See https://www.codeandweb.com/texturepacker/tutorials/uikit-animations-with-texturepacker
 
 ## Creating the sprite sheets
 
